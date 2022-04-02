@@ -28,6 +28,36 @@ nav {
     padding: 25px 100px 25px 95px;
     display: flex;
     justify-content: space-between;
+body {
+    font-family: sans-serif;
+    background-color: black;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.button {
+    background-color: #36bbce;
+    color: black;
+    text-decoration: none;
+    padding: 15px;
+    font-size: 24px;
+    border-radius: 15px;
+    display: block;
+    border: 3px solid #36bbce ;
+}
+
+nav {
+    border-top: 5px solid white;
+    border-bottom: 5px solid white;
+    padding: 25px 100px 25px 95px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .nav-link {
@@ -167,6 +197,9 @@ nav a:hover{
     width: 400px;
     margin: 20px;
     position: relative;
+    text-align: right;
+    font-style: italic;
+    color:white;
 
 }
 .article-but:hover{
@@ -189,5 +222,9 @@ nav a:hover{
     padding: 10px 75px 10px 75px;
     display: block;
     border:3px solid #133aac;
-}
 
+
+}
+.social:hover{
+    border-bottom: 4px double orange;
+}

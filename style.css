@@ -1,65 +1,195 @@
-<html>
-    <head>
-        <title>BitMarket</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <header>
-               <img class="logo" src="https://mars.algoritmika.org/uploads/2021/03/logo1_0_1615899136.svg">
-            <a class="button" href="">Скидки</a>
-        </header>
-        <nav>
-            <a class="nav-link" href="">Каталог</a>
-            <a class="nav-link" href="">Оптом</a>
-            <a class="nav-link" href="">Доставка</a>
-            <a class="nav-link" href="">Возврат товара</a>
-        </nav>
-        <main>
-            <h1>Профессионалы советуют</h1>
-            <section class="info">     
-                <article class="post">
-                    <h2>Лэптоп для отдыха</h2>
-                    <img class="post-img" src="https://mars.algoritmika.org/uploads/2021/02/notebook-405755_1920_0_1613586011.jpg" width="400px" height="300px"/>
-                    <p class="post-text">Samsung V145-S</p>
-                    <a class="article-but" href="">Подробнее</a>
-                    <img class="hit" src="https://cdn.pixabay.com/photo/2012/04/13/12/30/new-32199_1280.png">
-                </article>
-                <article class="post">
-                    <h2>Как выбрать наушники</h2>
-                    <img class="post-img" src="https://mars.algoritmika.org/uploads/2021/02/music-1813100_1280_0_1613586010.png" width="330px" height="300px"/>
-                    <p class="post-text">Поговорим о новинках</p>
-                    <a class="article-but" href="">Подробнее</a>
-                </article>
-                <article class="post">
-                    <h2>Телефон мечты</h2>
-                    <img class="post-img" src="https://mars.algoritmika.org/uploads/2021/02/mobile-phone-1875813_1920_0_1613586011.jpg" width="400px" height="300px"/>
-                    <p class="post-text">Apple iphone 13</p>
-                    <a class="article-but" href="">Подробнее</a>
-                </article>
-                <article class="post">
-                    <h2>Техника для всего</h2>
-                    <img class="post-img" src="https://mars.algoritmika.org/uploads/2021/02/laptop-1483974_1920_0_1613586010.jpg" width="400px" height="300px"/>
-                    <p class="post-text">И целого мира мало...</p>
-                    <a class="article-but" href="">Подробнее</a>
-                </article>
-            </section>
-            <article class="fixed">
-            <p><b>Напиши — получи промокод!</b></p>
-            <a class="social" href=""><img src="https://mars.algoritmika.org/uploads/2021/02/icon-set-1142000_1280%201_0_1613586391.png" width="30px" height="30px"></a>
-            <a class="social" href=""><img src="https://mars.algoritmika.org/uploads/2021/02/Group%201_0_1613586391.png" width="30px" height="30px"></a>
-            <a class="social" href=""><img src="https://mars.algoritmika.org/uploads/2021/02/instagram-3288419_1280%201_0_1613586391.png" width="30px" height="30px"></a>
-            </article>
-            <img class="full-image" src="https://mars.algoritmika.org/uploads/2021/02/mobile-phone-1419275_1920_0_1613586010.jpg" width="100%" min-height="270"/>
-            
-        </main>
-        <footer>
-            <div class="contacts">
-                <p class="footer-text"><span class="address">Адрес:</span> город Технологический,<br/> пр-д Современный, 29/2</p>
-                <p class="footer-text"><span class="tel">Телефон:</span> 4138-564</p>
-            </div>
-            <div class="footer-logo">
-                <img src="https://mars.algoritmika.org/uploads/2021/03/logo2_0_1615898903.svg"/>
-            </div>
-        </footer>
-    </body>
-</html>
+body {
+    font-family: sans-serif;
+    background-color: black;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.button {
+    background-color: #36bbce;
+    color: black;
+    text-decoration: none;
+    padding: 15px;
+    font-size: 24px;
+    border-radius: 15px;
+    display: block;
+    border: 3px solid #36bbce ;
+}
+
+nav {
+    border-top: 5px solid white;
+    border-bottom: 5px solid white;
+    padding: 25px 100px 25px 95px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-link {
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 36px;
+    margin-top: 45px;
+    margin-bottom: 40px;
+    
+}
+
+.post-text {
+    font-size: 24px;
+}
+
+.info {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.post {
+    background-color: white;
+    padding: 15px 45px 30px 45px;
+    width: 400px;
+    margin: 20px;
+    position: relative;
+
+}
+
+.article-but {
+    text-decoration: none;
+    background-color: #133aac;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    padding: 10px 75px 10px 75px;
+    display: block;
+    border:3px solid #133aac;
+}
+
+.full-image {
+    margin: 100px 0px 100px 0px;
+}
+
+.social {
+    display: block;
+    width: 30px;
+}
+
+footer {
+    background-color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 30px 30px 20px 45px;
+}
+
+.footer-text {
+    font-size: 24px;
+    margin-right: 30px;
+}
+
+.footer-text span {
+    color: #850AE5;
+    font-weight: bolder;
+}
+.fixed{
+    position: fixed;
+    width: 90px;
+    right: 0px;
+    margin-right: 0px;
+    top:240px;
+    background-color: #36bbce;
+    border: 1px solid #36bbce;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+}
+.hit{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top:200px;
+    left:20px;
+
+}
+h1::before{
+    content: url("UbTAsO5Yhmmr+8wKlS7wPXwNePFk9RjhrhC+XlSntcMsKnWT3DK2HqJHlR97V4hf8oEfFs5OusPWRowZPkFqFMAdRsiXYOqykL7Gua2LtVXOGuOtgs+pIYM03o+coAaQX6bs1XUQ5udq6SBo0csfFO24hiSqKOT5stnEj6m9QLmegNWZAfGwbX8eihwGm1wEhjKBsxal3dF7/Ro/NYMPVhdMbkIGVRSdwVePEMaxuGF66U++QG+ZUWWvGXA7wGVgr6ib5YeNniDh3I5VuYYYE2CczIL8gtujXnfXL8+CkM1qs7oBg49OvGcPNDOcRgNxEfTA3tyVq8a8xcb/I3fxLI0E8b1WySa5NpwMPHBO9TGw/lqG1B7+UW/eNoGqKz9nc+Lvge+sRViCvJrkw5zg8MRxiKOv8GLYaiUSpQk+W1EcV0i3WPPVK4b6fGE5hEMoPG70Y1/xtYcB087s2rNkOeWVzSPkq7PTyiSer0z6TcBXM/SLPVhXd4a9wcPZ/rNc6SRAtNdAhhalDL/UPB4NYDmcjJvHRpXLPhqdQaj9qMLUN0EofL3o1myYcLq/U7S3tA6q0+ewDTsJAPZ4FXVjY9Z/+VzPP5svyx/rv688m9WXW9PQaKE+xbOb3mcdzmIS0AdYd3PV0gOpsJua5rn+LXavwTfpwuzcZ5my9Z8cPrzW6aRToTeIVnhJLuP+fiEMxmlbXy8Yg2s5Zz2mbu7Bq/zd85+jVYmmM7R6ISSh98jIagb7ExsCpZ6HHfC2+y35pMEevGNznhVI8mo2VteBzJop4wH/4FHa/Kj/X50a/Bu0egslk9VABPliKxYFi/bsaP88I+KpcgaL3QBrz9H8/8fdmuwRncwWk65xASz5pJw8eh/DyWOb5phpYs//eGg+xUdcv5fcdwKisZzdz6YDD9f+r3Zavp3Ol3N+sv2cLR47xztkQXgf1oRo0sYei9UAAAAAElFTkSuQmCC");
+   height: 1px;
+   width: 1px;
+    display: inline-block;
+    
+}
+.address::before{
+    content: url("https://learn.algoritmika.org/uploads/student/1214034/3-1648844550.svg");
+    display: inline-block;
+}
+.tel::before{
+    content: url("https://learn.algoritmika.org/uploads/student/1214034/4-1648845088.svg");
+    display: inline-block;
+    height: 30px;
+}
+nav a:hover{
+
+}
+.button:hover{
+    background-color: #2ca2b4b2 ;
+    color: black;
+    text-decoration: none;
+    padding: 15px;
+    font-size: 24px;
+    border-radius: 10px;
+    display: block;
+    border: 3px solid #36bbce ;
+    border-radius: 15px;
+    
+
+}
+.nav-link:hover{
+    font-size: 24px;
+    color: #36bbce;
+    text-decoration: none;
+    display: block;
+
+}
+.post:hover{
+     background-color: #36bbce;
+    padding: 15px 45px 30px 45px;
+    width: 400px;
+    margin: 20px;
+    position: relative;
+
+}
+.article-but:hover{
+    text-decoration: none;
+    background-color: white;
+    color: #133aac;
+    font-size: 24px;
+    text-align: center;
+    padding: 10px 75px 10px 75px;
+    display: block;
+    border:3px solid #133aac;
+
+}
+.article-but:focus{
+    text-decoration: none;
+    background-color: rgba(161, 161, 161, 0.39);
+    color: #133aac;
+    font-size: 24px;
+    text-align: center;
+    padding: 10px 75px 10px 75px;
+    display: block;
+    border:3px solid #133aac;
+
+
+}
+
